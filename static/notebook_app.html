@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notebook App</title>
+    <link rel="stylesheet" href="notebook_app.css" />
+</head>
+<body>
+    <div class="logout-corner">
+        <button id="logout-button">Logout</button>
+    </div>
+    <div class="container">
+        <h1 class="greeting">hello, username</h1>
+        <div class="notebooks-container">
+            <div class="notebook">
+                <div class="notebook-title">Sample Notebook Title</div>
+                <div class="notebook-content">This is a sample content of the notebook. If the content is too long, it will be truncated with ellipsis...</div>
+            </div>
+            <div class="notebook">
+                <div class="notebook-title">Another Notebook</div>
+                <div class="notebook-content">Another example of notebook content that might be longer than the display area and should show ellipsis at the end.</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('logout-button').addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

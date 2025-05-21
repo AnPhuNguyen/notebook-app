@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/login.css" />
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label for="info">Username or Email:</label>
+        <input type="text" id="info" name="info" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Log In</button>
+    </form>
+    <div id="message" class="message"></div>
+    <button onclick="location.href= '/static/signup.html'">sign up, if you yet have no account</button>
+    <script src="/static/login.js"></script>
+</body>
+</html>
